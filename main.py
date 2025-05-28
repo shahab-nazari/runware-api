@@ -32,6 +32,7 @@ async def generate_image(prompt):
     if images:
         return images[0].imageURL
     return None
+    
 if __name__ == "__main__":
     import os
     port = int(os.environ.get("PORT", 5000))
